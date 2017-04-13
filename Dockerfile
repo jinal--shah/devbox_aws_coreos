@@ -11,7 +11,7 @@ LABEL \
 
 COPY assets /assets
 
-RUN sh /assets/alpine_build_scripts/core_poweruser.sh
+RUN sh /assets/alpine_build_scripts/core_poweruser.sh \
     && rm -rf /assets
 
 WORKDIR projects
