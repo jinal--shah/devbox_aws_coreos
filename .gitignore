@@ -1,0 +1,4 @@
+**/*.pem
+**/*.swp
+**/.ssh
+**/alpine_build_scripts
