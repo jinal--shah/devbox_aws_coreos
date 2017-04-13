@@ -6,7 +6,7 @@ LABEL \
       vendor="sortuniq" \
       description=" \
 ... see https://github.com/opsgang/docker_devbox_aws \
-- creates core user as default
+- creates core user as default \
 "
 
 COPY assets /assets
