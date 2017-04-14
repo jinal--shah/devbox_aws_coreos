@@ -110,11 +110,11 @@ labels() {
 
     cat<<EOM
     --label version=$(date +'%Y%m%d%H%M%S')
-    --label opsgang.build_git_uri=$gu
-    --label opsgang.build_git_sha=$gs
-    --label opsgang.build_git_branch=$gb
-    --label opsgang.build_git_tag=$gt
-    --label opsgang.built_by="$bb"
+    --label jinal--shah.build_git_uri=$gu
+    --label jinal--shah.build_git_sha=$gs
+    --label jinal--shah.build_git_branch=$gb
+    --label jinal--shah.build_git_tag=$gt
+    --label jinal--shah.built_by="$bb"
 EOM
 }
 
