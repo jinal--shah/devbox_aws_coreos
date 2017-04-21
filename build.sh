@@ -129,7 +129,9 @@ docker_build(){
     echo "$labels"
     echo "INFO: building $n:$IMG_TAG"
 
-    docker build --no-cache=true --force-rm $labels -t $n:$IMG_TAG .
+    docker_gid=$(id -G docker)
+    echo "... will set docker gid to $docker_gid"
+    docker build --no-cache=true --build-arg DOCKER_GID=$docker_gid --force-rm $labels -t $n:$IMG_TAG .
 }
 
 docker_build
