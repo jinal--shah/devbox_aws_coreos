@@ -4,7 +4,7 @@
 # the host's docker daemon via the docker.sock file.
 #
 # ... shadow pkg in non-standard repo
-u=http://nl.alpinelinux.org/alpine/edge/community
+u=http://dl-cdn.alpinelinux.org/alpine/edge/community
 repo_file=/etc/apk/repositories
 dgid="$1"
 
