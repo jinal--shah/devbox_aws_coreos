@@ -8,7 +8,7 @@
 
 MIN_DOCKER=1.11.0
 GIT_SHA_LEN=8
-IMG_TAG=candidate-3.6
+IMG_TAG=candidate
 
 version_gt() {
     [[ "$(printf '%s\n' "$@" | sort -V | head -n 1)" != "$1" ]]
