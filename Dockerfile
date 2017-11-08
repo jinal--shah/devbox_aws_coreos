@@ -1,4 +1,4 @@
-FROM opsgang/devbox_aws:stable
+FROM opsgang/devbox_aws:alpine-3.6
 
 MAINTAINER jinal--shah <jnshah@gmail.com>
 LABEL \
