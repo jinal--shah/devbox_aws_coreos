@@ -15,8 +15,8 @@ apk --update --no-cache add shadow
 userdel docker 2>/dev/null || true
 groupdel docker 2>/dev/null || true
 
-echo "INFO $0: creating docker group gid:$dgid"
-groupadd --gid $dgid docker || exit 1
+#echo "INFO $0: creating docker group gid:$dgid"
+#groupadd --gid $dgid docker || exit 1
 
 echo "INFO $0: adding core to docker group"
-usermod -a -G $dgid core || exit 1
+usermod -a -G 1 core || exit 1

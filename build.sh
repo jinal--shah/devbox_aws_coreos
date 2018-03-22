@@ -129,7 +129,8 @@ docker_build(){
     echo "$labels"
     echo "INFO: building $n:$IMG_TAG"
 
-    docker_gid=$(id -G docker)
+    docker_group=$(stat -c %G /var/run/docker.sock)
+    docker_gid=$(id -G $docker_group | awk {'print $1'})
     echo "... will set docker gid to $docker_gid"
     docker build --no-cache=true --build-arg DOCKER_GID=$docker_gid --force-rm $labels -t $n:$IMG_TAG .
 }
